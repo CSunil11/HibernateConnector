@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">
+
+<hibernate-mapping>
+	<class name="com.hiber.Users" table="JS_USER">
+		<meta attribute="class-description">
+			This class contains the employee detail.
+		</meta>
+
+		<id name="id" type="int" column="USER_ID">
+			<generator class="native" />
+		</id>
+
+		<property name="name" column="USER_NAME" type="String" />
+		<property name="surname" column="USER_SURNAME" type="String" />
+		<property name="phone" column="USER_PHONE" type="String" />
+		<property name="add" column="USER_ADD" type="String" />
+		<property name="join_date" column="USER_JOIN_DATE" type="String" />
+
+	</class>
+
+</hibernate-mapping>  
